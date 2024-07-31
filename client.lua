@@ -65,7 +65,7 @@ function Notify(msg, typenotif)
             coords = data.coords,
             title = Config.Dispatch.title,
             message = Config.Dispatch.text,
-            flash = 0,
+            flash = 1,
             unique_id = data.unique_id,
             sound = 1,
         })
