@@ -2,9 +2,9 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-author 'Danny'
-
-description 'Npc Rob'
+author 'N&D Scripts | Danny'
+version '1.5.0'
+description '[FREE] Npc Rob by N&D Scripts'
 
 
 shared_scripts {
