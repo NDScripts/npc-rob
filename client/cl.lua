@@ -26,15 +26,15 @@ local function isBlacklisted(model)
 end
 
 function Notify(msg, typenotif)
-    if Config.Alert == 'ox' then
+    if Config.Alert == 'ox_notify' then
         lib.notify({
             title = "",
             description = msg,
             type = typenotif  
         })
-    elseif Config.Alert == 'okok' then
+    elseif Config.Alert == 'okok_notify' then
         exports['okokNotify']:Alert("", msg, 5000, typenotif)
-    elseif Config.Alert == 'quasar' then
+    elseif Config.Alert == 'qs_dispatch' then
         TriggerServerEvent('qs-dispatch:server:CreateDispatchCall', {
             job = Config.PoliceJobName,
             callLocation = vector3(0,0,0),
@@ -61,7 +61,7 @@ function Notify(msg, typenotif)
         })
     elseif Config.Alert == 'ps_dispatch' then
          exports['ps-dispatch']:NPCRob()
-    elseif Config.Alert == 'esx' then 
+    elseif Config.Alert == 'esx_notify' then 
         ESX.ShowNotification(msg)
     end
 end
