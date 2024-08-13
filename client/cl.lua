@@ -59,6 +59,8 @@ function Notify(msg, typenotif)
             unique_id = data.unique_id,
             sound = 1,
         })
+    elseif Config.Alert == 'ps_dispatch' then
+         exports['ps-dispatch']:NPCRob()
     elseif Config.Alert == 'esx' then 
         ESX.ShowNotification(msg)
     end
