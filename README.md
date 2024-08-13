@@ -11,7 +11,7 @@ Config.lua
     
     Config.framework = 'esx' -- esx, qbcore, ox_core, nd_core, qbx
     Config.UseOldEsx = false -- false use ESX Export
-    Config.Alert = 'cd_dispatch' 
+    Config.Alert = 'cd_dispatch' -- ps_dispatch, cd_dispatch, qs_dispatch, esx_notify, ox_notify
     Config.TimeToRobAgain = 30
     Config.MinimumCops = 3 -- Minimum cops for rob 
     Config.PoliceJobName = 'police' -- Name of police job
